@@ -27,9 +27,9 @@ if($flag===0){
     $mail->Host = 'smtp.gmail.com';
     $mail->Port = '465';
     $mail->isHTML();
-    $mail->Username = 'bidmafia007@gmail.com';
-    $mail->Password = 'msodqaowigryvpvb';
-    $mail->SetFrom('bidmafia007@gmail.com');
+    $mail->Username = '#@gmail.com';
+    $mail->Password = '#';
+    $mail->SetFrom('#@gmail.com');
     $mail->Subject = 'Reset Password';
     $mail->Body = $randomid." is your otp to reset password";
     $mail->AddAddress($email_id);
