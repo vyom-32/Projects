@@ -34,9 +34,9 @@ while($product=$res->fetchArray())
                     $mail->Host='smtp.gmail.com';
                     $mail->Port='465';
                     $mail->isHTML();
-                    $mail->Username='bidmafia007@gmail.com';
-                    $mail->Password='msodqaowigryvpvb';
-                    $mail->SetFrom('bidmafia007@gmail.com');
+                    $mail->Username='#@gmail.com';
+                    $mail->Password='#';
+                    $mail->SetFrom('#@gmail.com');
                     $mail->Subject='Online Bidding';
                     $mail->Body="Congratulations ".$bidder_name."<br>Now you are the new owner of ".$product['name']."<br>You can contact the seller at given email address<br>Seller name:".$owner_name."<br>Seller's email:".$owner_email."<br>You can contect him for further details :)";
                     $mail->AddAddress($bidder_email);
@@ -49,9 +49,9 @@ while($product=$res->fetchArray())
                     $mail2->Host='smtp.gmail.com';
                     $mail2->Port='465';
                     $mail2->isHTML();
-                    $mail2->Username='bidmafia007@gmail.com';
-                    $mail2->Password='msodqaowigryvpvb';
-                    $mail2->SetFrom('bidmafia007@gmail.com');
+                    $mail2->Username='#@gmail.com';
+                    $mail2->Password='#';
+                    $mail2->SetFrom('#@gmail.com');
                     $mail2->Subject='Online Bidding';
                     $mail2->Body="Congratulations ".$owner_name."<br>Your product ".$product['name']." was sold to ".$bidder_name."(".$bidder_email.") for Rs.".$product['current_price']."<br>You can contact the buyer for further information :)";
                     $mail2->AddAddress($owner_email);
@@ -79,9 +79,9 @@ while($product=$res->fetchArray())
                     $mail->Host='smtp.gmail.com';
                     $mail->Port='465';
                     $mail->isHTML();
-                    $mail->Username='bidmafia007@gmail.com';
-                    $mail->Password='msodqaowigryvpvb';
-                    $mail->SetFrom('bidmafia007@gmail.com');
+                    $mail->Username='#@gmail.com';
+                    $mail->Password='#';
+                    $mail->SetFrom('#@gmail.com');
                     $mail->Subject='Online Bidding';
                     $mail->Body="Hello ".$owner_name."<br>Your product ".$product['name']." was gone unsold in the auction.<br>Best of luck for the next time :)";
                     $mail->AddAddress($owner_email);
